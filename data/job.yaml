@@ -1,0 +1,63 @@
+#
+# Date/time values need to be quoted to prevent YAML parser from converting it to datetime object.
+#
+job:
+  url: 'https://api.bettersoftware.com/v1/opportunity/order'
+  export_csv: 1
+  filters:
+    filters_set: 1
+    name: test
+    customer_filters: 0
+    event_filters: 0
+    order_filters: 1
+    dateLastModified:
+      type: order
+      active: 1
+      exists: 1
+      values:
+        start: '2019-11-01'
+        end: ~
+    columns:
+      active: 1
+      exists: 1
+      values:
+        - field: orderNumber
+          name: 'Order Number'
+        - field: ID
+          name: 'Order ID'
+        - field: franchiseID
+          name: 'Franchise ID'
+        - field: completed_on
+          name: 'Complete On'
+        - field: contact
+          name: 'Contact Name'
+        - field: customer_name
+          name: 'Customer'
+        - field: customerID
+          name: 'Customer ID'
+        - field: customer_cell
+          name: 'Cell'
+        - field: customer_phone
+          name: 'Phone'
+        - field: customer_email
+          name: 'Email'
+        - field: business_name
+          name: 'Business Name'
+        - field: serviceAddress
+          name: 'Service Address'
+        - field: address
+          name: 'Billing Address'
+        - field: rentalStartDate
+          name: 'Service Date'
+        - field: customer_franchise
+          name: 'Customer Franchise'
+        - field: order_franchise
+          name: 'Order Franchise'
+        - field: user_name
+          name: 'User Name'
+        - field: dateCreated
+          name: 'Created At'
+        - field: dateLastModified
+          name: 'Updated At'
+        - field: StatusLabel
+          name: 'Status'

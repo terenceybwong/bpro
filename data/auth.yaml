@@ -1,0 +1,15 @@
+auth:
+  url: https://api.bettersoftware.com/oauth/access_token
+  secrets:
+    instance1:
+      clientId: iweflksjldfljslkefjlakejflkjwlf4
+      clientSecret: asfjoewflsadflkelkfawklfjskf93f1
+    instance2:
+      clientId: wqoofsldfjlskdjfldj9we7fqekfeff1
+      clientSecret: 923lflkssssskdsflk99832fldvslanj
+    instance3:
+      clientId: 9d9ufsalfawelkfsdjzviovgflkwejfw
+      clientSecret: as990a923rlkfladlkvciwvrwlkjaflk
+    instance4:
+      clientId: 9s9flkasjflajelfjelji2kfdkfffffo
+      clientSecret: 99sdfoisjfiowe4lkqjelkjflkjefjjc

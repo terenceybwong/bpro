@@ -1,0 +1,16 @@
+{
+    "require": {
+        "ext-json": "*",
+        "league/oauth2-client": "^2.4",
+        "guzzlehttp/guzzle": "^6.5",
+        "symfony/yaml": "^4.4",
+        "symfony/console": "^4.4",
+        "symfony/serializer": "^4.4",
+        "symfony/property-access": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "AskNicely\\BPro\\": "src/"
+        }
+    }
+}

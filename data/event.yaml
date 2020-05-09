@@ -1,0 +1,28 @@
+#
+# Date/time values need to be quoted to prevent YAML parser from converting it to datetime object.
+#
+event:
+  url: 'https://api.bettersoftware.com/v1/events'
+  export_csv: true
+  params:
+    get_all_relations: 0
+    get_business_assets: 1
+    get_closed_order: 1
+    get_customer_assets: 1
+    get_customers: 1
+    get_order: 1
+    get_recurring_link: 0
+    get_relations: 1
+    get_users: 1
+  columns:
+    values:
+      - field: 'users.ID'
+        name: 'Staff ID'
+      - field: 'users.firstName'
+        name: 'firstName'
+      - field: 'users.lastName'
+        name: 'lastName'
+      - field: 'users.emailAddress'
+        name: 'emailAddress'
+      - field: 'business_assets.name_en'
+        name: 'truck'
